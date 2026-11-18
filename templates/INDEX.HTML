@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Professional Profile Aggregator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Professional Profile Aggregator</h1>
+
+    <p>
+        Enter any professional profile URL below.
+    </p>
+
+    <form action="/search" method="post">
+
+        <input
+            type="text"
+            name="profile_url"
+            placeholder="Paste GitHub or Stack Overflow URL"required>
+
+        <button type="submit">
+
+            Search Profile
+
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
